@@ -12,8 +12,8 @@ function handleClick(e) {
 /* Write your implementation of greet() */
 function greet(timeStr)
 {
-  const timeHour = parseInt(timeStr, 10); 
-  /* radix of 10 converts from a decimal number */
+  var time = timeStr.split(':');
+  const timeHour = parseInt(time[0]); 
   if (timeHour < 12) 
   {
     return "Good Morning"
